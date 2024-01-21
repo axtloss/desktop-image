@@ -28,7 +28,7 @@ jobs:
 
     # Push the image to GHCR (Image Registry)
     - name: Push To GHCR
-      if: github.repository == 'vanilla-os/desktop-image'
+      if: github.repository == 'axtloss/desktop-image'
       run: |
         docker login ghcr.io -u ${{ env.REGISTRY_USER }} -p ${{ env.REGISTRY_PASSWORD }}
-        docker image push "ghcr.io/vanilla-os/desktop:main"
+        docker image push "ghcr.io/axtloss/desktop:main"
