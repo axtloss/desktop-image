@@ -2,7 +2,7 @@ base: ghcr.io/vanilla-os/core:main
 name: Vanilla Desktop
 id: vanilla-desktop
 labels:
-  maintainer: Vanilla OS Contributors
+  maintainer: VanillaOS Contributors
 args:
   DEBIAN_FRONTEND: noninteractive
 runs:
